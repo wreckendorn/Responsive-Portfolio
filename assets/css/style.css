@@ -120,7 +120,7 @@ footer {
 }
 
 
-/* main */
+/* AboutMe/index page */
 
 #main-container {
   padding-top: 130px;
@@ -245,50 +245,60 @@ input[type=submit] {
   overflow: auto;
 }
 
+/* when the screen size is less than 980 pixels, the contact info panel will move to its own row underneath the main content section.  
+  both will take up 100% of the row. main container will shrink to 980.*/
 @media screen and (max-width: 980px) {
+
+nav {
+  margin-right: 20px;
+}
+
+#main-container {
+  margin: 0 30px 0 30px;
+}
+
+.main-section {
+  width: 100%;
+}
+
+.container {
+  max-width: 980px;
+}
+
+.contactWrapper {
+  margin-top: 60px;
+  width: 100%;
+}
+
+}
+
+/* when the screen size is less than 768 pixels, the contact info panel will move to its own row underneath the main content section.  
+    both will take up 100% of the row. main container will shrink to 768px*/
+@media screen and (max-width: 768px) {
 
   #main-container {
     margin: 0 30px 0 30px;
   }
 
-  .contactWrapper {
-    margin-top: 60px;
+  .main-section {
     width: 100%;
   }
-
-  .main-section {
-  width: 100%;
-  }
-
-  .container {
-    max-width: 980px;
-  }
-
-  nav {
-    margin-right: 20px;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
+  
   .container {
     max-width: 768px;
   }
 
-  .main-section {
-    width: 100%;
-  }
-
-  #main-container {
-    margin: 0 30px 0 30px;
-  }
-
   .contactWrapper {
     width: 100%;
     margin-top: 60px;
   }
+}
 
+/* when the screen size is less than 640 pixels, the contact info panel will move to its own row underneath the main content section.  
+    both will take up 100% of the row. 
+- main container will shrink to 640px. 
+- navigation links will also move to their own row under the nametag.  
+- both the nametag and nav will then take up 100% of their own row*/
 @media screen and (max-width: 640px) {
 
   nav {
@@ -302,22 +312,22 @@ input[type=submit] {
     padding-right: 50px;
   }
 
-  .contactWrapper {
+  .main-section {
     width: 100%;
     margin-top: 60px;
   }
 
-  .main-section {
+  .container {
+    max-width: 640px;
+  }
+
+  .contactWrapper {
     width: 100%;
     margin-top: 60px;
   }
 
   #logo {
     width: 100%
-  }
-
-  .container {
-    max-width: 640px;
   }
 
 }
