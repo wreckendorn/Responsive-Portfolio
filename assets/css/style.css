@@ -138,6 +138,11 @@ footer {
   border: 1px solid #ddd;
 }
 
+.auth-image {
+  width: 520px;
+  height: auto;
+}
+
 .contactWrapper {
   width: 30%;
   background-color: white;
@@ -185,13 +190,7 @@ footer {
   border-bottom: 0;
 }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
+
 
 /* contact page */
 
@@ -261,6 +260,12 @@ nav {
   width: 100%;
 }
 
+.auth-image {
+  float: left;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
 .container {
   max-width: 980px;
 }
@@ -292,6 +297,12 @@ nav {
     width: 100%;
     margin-top: 60px;
   }
+
+  .auth-image {
+    float: left;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
 }
 
 /* when the screen size is less than 640 pixels, the contact info panel will move to its own row underneath the main content section.  
@@ -321,13 +332,16 @@ nav {
     max-width: 640px;
   }
 
+
   .contactWrapper {
     width: 100%;
     margin-top: 60px;
   }
 
   #logo {
-    width: 100%
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
   }
 
 }
